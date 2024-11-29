@@ -1,1 +1,2 @@
-# task_scandi
+# task_scandi 
+Vadims Dimbovskis
