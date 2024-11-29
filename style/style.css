@@ -1,0 +1,133 @@
+/* Общие настройки */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Заголовок */
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 0;
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Контейнер для действий */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.actions button, .actions a button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.actions button:hover, .actions a button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Основной контейнер продуктов */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Карточка продукта */
+.product-card {
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Поля внутри карточки */
+.product-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    color: #4caf50;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card .attribute {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Чекбокс для удаления */
+.product-card .delete-checkbox {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Стиль для футера */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для кнопок в контейнере действий */
+button, .actions a button {
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .actions a button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active, .actions a button:active {
+    background-color: #004494;
+}
